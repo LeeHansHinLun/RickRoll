@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <script>
+        function stopVideo() {
+            document.getElementById("rickroll").remove();
+            document.getElementById("afterStopText").hidden = false;
+        }
+    </script>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <video width="400" autoplay id="rickroll">
+        <source src="assets/rickroll.mp4" type="video/mp4">
+        <source src="assets/rickroll.ogg" type="video/ogg">
+    </video>
+    <button onclick="return stopVideo()">Stop</button>
+    <p id="afterStopText" hidden>Fine</p>
+</body>
+</html>

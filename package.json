@@ -1,0 +1,68 @@
+{
+  "name": "electronjsapplication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron .",
+    "buildwin": "electron-builder --win portable"
+  },
+  "author": "LeeHansHinLun",
+  "license": "MIT",
+  "repository": "https://github.com/LeeHansHinLun/ElectronApplication1",
+  "dependencies": {
+    
+  },
+  "build": {
+    "appId": "net.LeeHansHinLun.electron.ElectronApplication1",
+    "productName": "Electron Application",
+    "copyright": "Copyright © 2022 LeeHansHinLun",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "icon": "assets/icon.png",
+      "target": [
+        "zip",
+        "dmg"
+      ]
+    },
+    "win": {
+      "publisherName": "LeeHansHinLun",
+      "publish": [
+        "github"
+      ],
+      "target": [
+        "nsis"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "tar.gz"
+      ]
+    },
+    "dmg": {
+      "background": "assets/background.png",
+      "icon": "assets/icon.icns",
+      "title": "Electron Application"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "assets/icon.png",
+      "license": "assets/agreement.html",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "LeeHansHinLun",
+        "repo": "ElectronApplication1",
+        "vPrefixedTagName": true,
+        "private": true,
+        "releaseType": "draft"
+      }
+    ]
+  }
+}
