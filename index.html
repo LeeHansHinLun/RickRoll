@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RickRoll written in ElectronJS, open source(if you want to rick roll someone) and simple to use. Created by LeeHansHinLun">
+    <meta name="author" content="LeeHansHinLun">
+    <title>RickRollJS</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+    <script>
+        function downloadExe() {
+            document.getElementById('downloadURL').click();
+        }
+    </script>
+</head>
+<body>
+    <h1>RickRollJS - Rick Roll in ElectronJS</h1>
+    The executable that rick rolls your friends.<br>
+    This is written in JavaScript and I was planning to make one for TypeScript later when possible.<br>
+    Copyrighted under MIT License. Completely free to use.<br>
+    <button id="downloadExe" onclick="return downloadExe()">Download RickRoll</button><br>
+    <a href="https://github.com/LeeHansHinLun/RickRoll/releases/download/v1.0.0/RickRollJS-1.0.0-Win64.exe" id="downloadURL" hidden="true"></a>
+</body>
+</html>
